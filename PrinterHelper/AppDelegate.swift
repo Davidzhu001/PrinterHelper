@@ -10,56 +10,56 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var timerCounterDisplayer: NSTextField!
-    var minutes: Double?;
+    var seconds: Double?;
     var timer = NSTimer();
     
     var isCounting: Bool = false
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        }
-
+    }
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
+    
     @IBAction func timerStart(sender: AnyObject) {
         if isCounting == false {
             var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countingTime", userInfo: nil, repeats: true)
             isCounting = true
-            }   else {
+        }   else {
             println("test")
             
         }
         
     }
     @IBAction func addingTime(sender: AnyObject) {
-    
-        if minutes != nil {
-            minutes = minutes!;
-            minutes = minutes! + 10
+        
+        if seconds != nil {
+            seconds = seconds!;
+            seconds = seconds! + 10
         }   else {
-            minutes = 0;
-            minutes = minutes! + 10
+            seconds = 0;
+            seconds = seconds! + 10
         }
-
+        
     }
     
     func countingTime() {
-        if minutes > 0 {
-            timerCounterDisplayer.doubleValue = minutes!
-            minutes = minutes! - 1
-            timerCounterDisplayer.stringValue = "This minutes \(timerCounterDisplayer.doubleValue) left"
+        if seconds > 0 {
+            var min = uint8(seconds!)
+            seconds = seconds! - 1
+            let strMinutes = String(format: "%02d",  min)
+            timerCounterDisplayer.stringValue = "This seconds \(strMinutes) left"
             println("time \(timerCounterDisplayer.doubleValue)")
-            println("time \(minutes)")
+            println("time \(seconds)")
         }
         else {
             timerCounterDisplayer.stringValue = "you need to change some thing"
-            }
-    
+        }
+        
     }
-
+    
 }
-
