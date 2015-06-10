@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC1621861B27BBC900B8549F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1621851B27BBC900B8549F /* AppDelegate.swift */; };
+		BC1621881B27BBC900B8549F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1621871B27BBC900B8549F /* Images.xcassets */; };
+		BC16218B1B27BBC900B8549F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1621891B27BBC900B8549F /* MainMenu.xib */; };
+		BC1621971B27BBC900B8549F /* PrinterHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1621961B27BBC900B8549F /* PrinterHelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC1621911B27BBC900B8549F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC1621781B27BBC900B8549F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC16217F1B27BBC900B8549F;
+			remoteInfo = PrinterHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC1621801B27BBC900B8549F /* PrinterHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrinterHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1621841B27BBC900B8549F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1621851B27BBC900B8549F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC1621871B27BBC900B8549F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC16218A1B27BBC900B8549F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BC1621901B27BBC900B8549F /* PrinterHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrinterHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1621951B27BBC900B8549F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1621961B27BBC900B8549F /* PrinterHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterHelperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC16217D1B27BBC900B8549F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC16218D1B27BBC900B8549F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC1621771B27BBC900B8549F = {
+			isa = PBXGroup;
+			children = (
+				BC1621821B27BBC900B8549F /* PrinterHelper */,
+				BC1621931B27BBC900B8549F /* PrinterHelperTests */,
+				BC1621811B27BBC900B8549F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC1621811B27BBC900B8549F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC1621801B27BBC900B8549F /* PrinterHelper.app */,
+				BC1621901B27BBC900B8549F /* PrinterHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC1621821B27BBC900B8549F /* PrinterHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BC1621851B27BBC900B8549F /* AppDelegate.swift */,
+				BC1621871B27BBC900B8549F /* Images.xcassets */,
+				BC1621891B27BBC900B8549F /* MainMenu.xib */,
+				BC1621831B27BBC900B8549F /* Supporting Files */,
+			);
+			path = PrinterHelper;
+			sourceTree = "<group>";
+		};
+		BC1621831B27BBC900B8549F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC1621841B27BBC900B8549F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1621931B27BBC900B8549F /* PrinterHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC1621961B27BBC900B8549F /* PrinterHelperTests.swift */,
+				BC1621941B27BBC900B8549F /* Supporting Files */,
+			);
+			path = PrinterHelperTests;
+			sourceTree = "<group>";
+		};
+		BC1621941B27BBC900B8549F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC1621951B27BBC900B8549F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC16217F1B27BBC900B8549F /* PrinterHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC16219A1B27BBC900B8549F /* Build configuration list for PBXNativeTarget "PrinterHelper" */;
+			buildPhases = (
+				BC16217C1B27BBC900B8549F /* Sources */,
+				BC16217D1B27BBC900B8549F /* Frameworks */,
+				BC16217E1B27BBC900B8549F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrinterHelper;
+			productName = PrinterHelper;
+			productReference = BC1621801B27BBC900B8549F /* PrinterHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC16218F1B27BBC900B8549F /* PrinterHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC16219D1B27BBC900B8549F /* Build configuration list for PBXNativeTarget "PrinterHelperTests" */;
+			buildPhases = (
+				BC16218C1B27BBC900B8549F /* Sources */,
+				BC16218D1B27BBC900B8549F /* Frameworks */,
+				BC16218E1B27BBC900B8549F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC1621921B27BBC900B8549F /* PBXTargetDependency */,
+			);
+			name = PrinterHelperTests;
+			productName = PrinterHelperTests;
+			productReference = BC1621901B27BBC900B8549F /* PrinterHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC1621781B27BBC900B8549F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Zhu,Weicheng";
+				TargetAttributes = {
+					BC16217F1B27BBC900B8549F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					BC16218F1B27BBC900B8549F = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = BC16217F1B27BBC900B8549F;
+					};
+				};
+			};
+			buildConfigurationList = BC16217B1B27BBC900B8549F /* Build configuration list for PBXProject "PrinterHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC1621771B27BBC900B8549F;
+			productRefGroup = BC1621811B27BBC900B8549F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC16217F1B27BBC900B8549F /* PrinterHelper */,
+				BC16218F1B27BBC900B8549F /* PrinterHelperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC16217E1B27BBC900B8549F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1621881B27BBC900B8549F /* Images.xcassets in Resources */,
+				BC16218B1B27BBC900B8549F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC16218E1B27BBC900B8549F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC16217C1B27BBC900B8549F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1621861B27BBC900B8549F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC16218C1B27BBC900B8549F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1621971B27BBC900B8549F /* PrinterHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC1621921B27BBC900B8549F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC16217F1B27BBC900B8549F /* PrinterHelper */;
+			targetProxy = BC1621911B27BBC900B8549F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC1621891B27BBC900B8549F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC16218A1B27BBC900B8549F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC1621981B27BBC900B8549F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC1621991B27BBC900B8549F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BC16219B1B27BBC900B8549F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrinterHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC16219C1B27BBC900B8549F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PrinterHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC16219E1B27BBC900B8549F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrinterHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrinterHelper.app/Contents/MacOS/PrinterHelper";
+			};
+			name = Debug;
+		};
+		BC16219F1B27BBC900B8549F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrinterHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrinterHelper.app/Contents/MacOS/PrinterHelper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC16217B1B27BBC900B8549F /* Build configuration list for PBXProject "PrinterHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1621981B27BBC900B8549F /* Debug */,
+				BC1621991B27BBC900B8549F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC16219A1B27BBC900B8549F /* Build configuration list for PBXNativeTarget "PrinterHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC16219B1B27BBC900B8549F /* Debug */,
+				BC16219C1B27BBC900B8549F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC16219D1B27BBC900B8549F /* Build configuration list for PBXNativeTarget "PrinterHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC16219E1B27BBC900B8549F /* Debug */,
+				BC16219F1B27BBC900B8549F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC1621781B27BBC900B8549F /* Project object */;
+}
