@@ -35,27 +35,65 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
     }
-    @IBAction func addingTime(sender: AnyObject) {
+    
+    func addingTimeFram(number: Double) {
         
         if seconds != nil {
             seconds = seconds!;
-            seconds = seconds! + 10
+            seconds = seconds! + number
+            var vseconds = UInt16(seconds!)
+            let mins = vseconds / 60
+            let aseconds = vseconds % 60
+            let ahours = mins / 60
+            let aminutes = mins % 60
+            let strMinutes = String(format: "%02d",  aminutes)
+            let strSeconds = String(format: "%02d",  aseconds)
+            let strHours = String(format: "%02d",  ahours)
+            timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
         }   else {
             seconds = 0;
-            seconds = seconds! + 10
+            seconds = seconds! + number;
+            var vseconds = UInt16(seconds!)
+            let mins = vseconds / 60
+            let aseconds = vseconds % 60
+            let ahours = mins / 60
+            let aminutes = mins % 60
+            let strMinutes = String(format: "%02d",  aminutes)
+            let strSeconds = String(format: "%02d",  aseconds)
+            let strHours = String(format: "%02d",  ahours)
+            timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
         }
         
     }
+        
+    @IBAction func addingSeconds(sender: AnyObject) {
+                addingTimeFram(10)
+            
+    }
+    @IBAction func addingMinutes(sender: AnyObject) {
+                addingTimeFram(60)
+    }
+    
+    @IBAction func addingTenMins(sender: AnyObject) {
+                 addingTimeFram(600)
+    }
+    @IBAction func addingTwentyMins(sender: AnyObject) {
+                 addingTimeFram(1200)
+    }
+    
     
     func countingTime() {
         if seconds > 0 {
-            var vseconds = uint8(seconds!)
+            var vseconds = UInt16(seconds!)
             seconds = seconds! - 1
             let mins = vseconds / 60
-            let secs = vseconds % 60
-            let strMinutes = String(format: "%02d",  mins)
-            let strSeconds = String(format: "%02d",  secs)
-            timerCounterDisplayer.stringValue = "This seconds \(strMinutes) : \(strSeconds) left"
+            let aseconds = vseconds % 60
+            let ahours = mins / 60
+            let aminutes = mins % 60
+            let strMinutes = String(format: "%02d",  aminutes)
+            let strSeconds = String(format: "%02d",  aseconds)
+            let strHours = String(format: "%02d",  ahours)
+            timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
             println("time \(timerCounterDisplayer.doubleValue)")
             println("time \(seconds)")
         }

@@ -11,6 +11,7 @@
 		BC1621881B27BBC900B8549F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1621871B27BBC900B8549F /* Images.xcassets */; };
 		BC16218B1B27BBC900B8549F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1621891B27BBC900B8549F /* MainMenu.xib */; };
 		BC1621971B27BBC900B8549F /* PrinterHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1621961B27BBC900B8549F /* PrinterHelperTests.swift */; };
+		BCF33F251B28B22200C78417 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF33F241B28B22200C78417 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		BC1621901B27BBC900B8549F /* PrinterHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrinterHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1621951B27BBC900B8549F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1621961B27BBC900B8549F /* PrinterHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterHelperTests.swift; sourceTree = "<group>"; };
+		BCF33F241B28B22200C78417 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1621851B27BBC900B8549F /* AppDelegate.swift */,
+				BCF33F241B28B22200C78417 /* TimerViewController.swift */,
 				BC1621871B27BBC900B8549F /* Images.xcassets */,
 				BC1621891B27BBC900B8549F /* MainMenu.xib */,
 				BC1621831B27BBC900B8549F /* Supporting Files */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF33F251B28B22200C78417 /* TimerViewController.swift in Sources */,
 				BC1621861B27BBC900B8549F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +400,7 @@
 				BC16219C1B27BBC900B8549F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC16219D1B27BBC900B8549F /* Build configuration list for PBXNativeTarget "PrinterHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +409,7 @@
 				BC16219F1B27BBC900B8549F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

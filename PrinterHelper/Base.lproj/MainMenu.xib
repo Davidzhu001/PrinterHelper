@@ -13,6 +13,8 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PrinterHelper" customModuleProvider="target">
             <connections>
+                <outlet property="addingTenMins" destination="MzR-Jf-azI" id="LK6-GZ-RAq"/>
+                <outlet property="addingtimeseconds" destination="jet-v0-8td" id="asf-ho-75A"/>
                 <outlet property="timerCounterDisplayer" destination="obp-fY-DdT" id="OdW-le-fYJ"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -686,24 +688,54 @@
                             <action selector="timerStart:" target="Voe-Tx-rLC" id="yxT-VR-VVr"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obp-fY-DdT">
-                        <rect key="frame" x="18" y="190" width="435" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="jgl-Z0-L47">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jet-v0-8td">
-                        <rect key="frame" x="51" y="83" width="85" height="32"/>
-                        <buttonCell key="cell" type="push" title="10Mins" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hN8-IO-WyW">
+                        <rect key="frame" x="51" y="83" width="63" height="32"/>
+                        <buttonCell key="cell" type="push" title="10s" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hN8-IO-WyW">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="addingTime:" target="Voe-Tx-rLC" id="Z5w-28-4yQ"/>
+                            <action selector="addingSeconds:" target="Voe-Tx-rLC" id="Ebp-b9-bBA"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNS-WK-tpn">
+                        <rect key="frame" x="114" y="83" width="67" height="32"/>
+                        <buttonCell key="cell" type="push" title="1ms" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YVD-LI-z21">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addingMinutes:" target="Voe-Tx-rLC" id="ax1-gp-d3s"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzR-Jf-azI">
+                        <rect key="frame" x="185" y="83" width="74" height="32"/>
+                        <buttonCell key="cell" type="push" title="10ms" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ddR-ab-DNK">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addingTenMins:" target="Voe-Tx-rLC" id="RsD-hc-lfg"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efD-Ja-wUW">
+                        <rect key="frame" x="272" y="83" width="74" height="32"/>
+                        <buttonCell key="cell" type="push" title="20ms" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FdL-cA-8bs">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addingTwentyMins:" target="Voe-Tx-rLC" id="ALV-xA-7xT"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obp-fY-DdT">
+                        <rect key="frame" x="25" y="233" width="431" height="86"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="border" alignment="center" title="Publish4all" drawsBackground="YES" id="jgl-Z0-L47">
+                            <font key="font" metaFont="system" size="60"/>
+                            <color key="textColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
         </window>

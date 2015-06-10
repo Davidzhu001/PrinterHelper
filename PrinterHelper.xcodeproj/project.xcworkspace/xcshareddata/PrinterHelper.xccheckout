@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D14877F1-3417-4C08-9E1C-850FF18362F3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>PrinterHelper</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>82A2A23E189A19ADF6C4A56CC6D68F2A0395E797</key>
 		<string>https://github.com/Davidzhu001/PrinterHelper.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PrinterHelper.xcodeproj</string>
+	<string>PrinterHelper.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>82A2A23E189A19ADF6C4A56CC6D68F2A0395E797</key>
