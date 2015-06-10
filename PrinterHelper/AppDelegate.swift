@@ -49,10 +49,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func countingTime() {
         if seconds > 0 {
-            var min = uint8(seconds!)
+            var vseconds = uint8(seconds!)
             seconds = seconds! - 1
-            let strMinutes = String(format: "%02d",  min)
-            timerCounterDisplayer.stringValue = "This seconds \(strMinutes) left"
+            let mins = vseconds / 60
+            let secs = vseconds % 60
+            let strMinutes = String(format: "%02d",  mins)
+            let strSeconds = String(format: "%02d",  secs)
+            timerCounterDisplayer.stringValue = "This seconds \(strMinutes) : \(strSeconds) left"
             println("time \(timerCounterDisplayer.doubleValue)")
             println("time \(seconds)")
         }
