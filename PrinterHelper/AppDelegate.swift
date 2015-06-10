@@ -16,8 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var minutes: Double?;
     var timer = NSTimer();
     
-
-
+    var isCounting: Bool = false
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         }
@@ -27,16 +26,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func timerStart(sender: AnyObject) {
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countingTime", userInfo: nil, repeats: true)
+        if isCounting == false {
+            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countingTime", userInfo: nil, repeats: true)
+            isCounting = true
+            }   else {
+            println("test")
+            
+        }
+        
     }
     @IBAction func addingTime(sender: AnyObject) {
     
         if minutes != nil {
             minutes = minutes!;
-            minutes = minutes! + 600
+            minutes = minutes! + 10
         }   else {
             minutes = 0;
-            minutes = minutes! + 600
+            minutes = minutes! + 10
         }
 
     }
@@ -51,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         else {
             timerCounterDisplayer.stringValue = "you need to change some thing"
-        }
+            }
     
     }
 
