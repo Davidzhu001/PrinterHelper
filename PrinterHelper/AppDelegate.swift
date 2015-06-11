@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func timerStart(sender: AnyObject) {
         if isCounting == false {
-            var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countingTime", userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "countingTime", userInfo: nil, repeats: true)
             isCounting = true
         }   else {
             println("test")
@@ -36,32 +36,49 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
     }
     
+    @IBAction func Reset(sender: AnyObject) {
+        seconds = 0
+        timer.invalidate();
+        isCounting = false
+        timer = NSTimer();
+        timeformat();
+
+    }
+    
+    @IBAction func timeStop(sender: AnyObject) {
+        timer.invalidate();
+        isCounting = false
+        timer = NSTimer();
+        timeformat();
+
+    }
+    
+    
+    func timeformat() {
+        var vseconds = UInt16(seconds!)
+        let mins = vseconds / 60
+        let aseconds = vseconds % 60
+        let ahours = mins / 60
+        let aminutes = mins % 60
+        let strMinutes = String(format: "%02d",  aminutes)
+        let strSeconds = String(format: "%02d",  aseconds)
+        let strHours = String(format: "%02d",  ahours)
+        timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
+    }
+    
+    
+    
+    
     func addingTimeFram(number: Double) {
         
         if seconds != nil {
             seconds = seconds!;
             seconds = seconds! + number
-            var vseconds = UInt16(seconds!)
-            let mins = vseconds / 60
-            let aseconds = vseconds % 60
-            let ahours = mins / 60
-            let aminutes = mins % 60
-            let strMinutes = String(format: "%02d",  aminutes)
-            let strSeconds = String(format: "%02d",  aseconds)
-            let strHours = String(format: "%02d",  ahours)
-            timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
+            timeformat();
         }   else {
             seconds = 0;
             seconds = seconds! + number;
-            var vseconds = UInt16(seconds!)
-            let mins = vseconds / 60
-            let aseconds = vseconds % 60
-            let ahours = mins / 60
-            let aminutes = mins % 60
-            let strMinutes = String(format: "%02d",  aminutes)
-            let strSeconds = String(format: "%02d",  aseconds)
-            let strHours = String(format: "%02d",  ahours)
-            timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
+            timeformat();
         }
         
     }
@@ -84,16 +101,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func countingTime() {
         if seconds > 0 {
-            var vseconds = UInt16(seconds!)
             seconds = seconds! - 1
-            let mins = vseconds / 60
-            let aseconds = vseconds % 60
-            let ahours = mins / 60
-            let aminutes = mins % 60
-            let strMinutes = String(format: "%02d",  aminutes)
-            let strSeconds = String(format: "%02d",  aseconds)
-            let strHours = String(format: "%02d",  ahours)
-            timerCounterDisplayer.stringValue = "\(strHours) :\(strMinutes) : \(strSeconds)"
+            timeformat();
             println("time \(timerCounterDisplayer.doubleValue)")
             println("time \(seconds)")
         }
