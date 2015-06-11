@@ -107,9 +107,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             println("time \(seconds)")
         }
         else {
-            timerCounterDisplayer.stringValue = "you need to change some thing"
-        }
+            timerCounterDisplayer.stringValue = "ready to chane"
+            showNotification();
+            timer.invalidate();
+            isCounting = false
+            timer = NSTimer();
+                    }
         
+    }
+    
+    func showNotification() -> Void {
+        var notification = NSUserNotification()
+        notification.title = "Test from Swift"
+        notification.informativeText = "The body of this Swift notification"
+        notification.soundName = NSUserNotificationDefaultSoundName
+        NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
     }
     
 }
