@@ -11,6 +11,13 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
+    @IBOutlet weak var TimerSituation: NSTextField!
+    @IBOutlet weak var printerNameField: NSTextField!
+    @IBOutlet weak var printerNameOutlet: NSTextField!
+    @IBAction func printerNameConfrimButton(sender: AnyObject) {
+        printerNameOutlet.stringValue = printerNameField.stringValue
+    }
+    
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var timerCounterDisplayer: NSTextField!
     var seconds: Double?;
@@ -82,27 +89,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
     }
-        
-    @IBAction func addingSeconds(sender: AnyObject) {
-                addingTimeFram(10)
-            
-    }
-    @IBAction func addingMinutes(sender: AnyObject) {
-                addingTimeFram(60)
-    }
     
-    @IBAction func addingTenMins(sender: AnyObject) {
-                 addingTimeFram(600)
-    }
-    @IBAction func addingTwentyMins(sender: AnyObject) {
-                 addingTimeFram(1200)
-    }
     
     
     func countingTime() {
         if seconds > 0 {
             seconds = seconds! - 1
             timeformat();
+            TimerSituation.stringValue = "Running"
             println("time \(timerCounterDisplayer.doubleValue)")
             println("time \(seconds)")
         }
