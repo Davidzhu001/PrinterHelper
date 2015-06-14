@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func Reset(sender: AnyObject) {
-        seconds = 0
+        seconds = 10
         timer.invalidate();
         isCounting = false
         timer = NSTimer();
